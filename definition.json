@@ -1,0 +1,57 @@
+{
+    "mappings": {
+      "dynamic": true,
+      "fields": {
+        "2d": {
+          "fields":{
+            "raw":{
+              "fields": {
+                "cosine": {
+                  "dimensions": 2,
+                  "similarity": "cosine",
+                  "type": "knnVector"
+                },
+                "dotproduct": {
+                  "dimensions": 2,
+                  "similarity": "dotProduct",
+                  "type": "knnVector"
+                },
+                "euclidean": {
+                  "dimensions": 2,
+                  "similarity": "euclidean",
+                  "type": "knnVector"
+                }
+              },
+              "type": "document"
+            }
+          },
+          "type": "document"
+        },
+        "3d": {
+            "fields":{
+              "raw":{
+                "fields": {
+                  "cosine": {
+                    "dimensions": 3,
+                    "similarity": "cosine",
+                    "type": "knnVector"
+                  },
+                  "dotproduct": {
+                    "dimensions": 3,
+                    "similarity": "dotProduct",
+                    "type": "knnVector"
+                  },
+                  "euclidean": {
+                    "dimensions": 3,
+                    "similarity": "euclidean",
+                    "type": "knnVector"
+                  }
+                },
+                "type": "document"
+              }
+            },
+            "type": "document"
+          }
+      }
+    }
+  }
