@@ -10,3 +10,9 @@ To run this project you need:
 I used data from these sources for my examples:
 * [Average body and brain weights for animals](https://www.open.edu/openlearn/science-maths-technology/mathematics-statistics/exploring-data-graphs-and-numerical-summaries/content-section-2.6#tbl001_006) from OpenLearn
 * ['Home Education' by Charlotte M. Mason](https://www.gutenberg.org/cache/epub/71087/pg71087.txt)
+
+## Usage
+To use the notebook you will need to set up a `.env` file in this directory to store the connection URL for your Atlas cluster in the `MDB_URI` variable.
+E.g. `MDB_URI="mongodb+srv://<user>:<password>@<cluster id>.mongodb.net/<database>"`
+
+Read [this tutorial](https://www.mongodb.com/docs/atlas/tutorial/connect-to-your-cluster/) for more information about connecting to MongoDB Atlas.
