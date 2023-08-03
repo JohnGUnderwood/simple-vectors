@@ -12,7 +12,11 @@ I used data from these sources for my examples:
 * ['Home Education' by Charlotte M. Mason](https://www.gutenberg.org/cache/epub/71087/pg71087.txt)
 
 ## Usage
+### Connect to Atlas
 To use the notebook you will need to set up a `.env` file in this directory to store the connection URL for your Atlas cluster in the `MDB_URI` variable.
 E.g. `MDB_URI="mongodb+srv://<user>:<password>@<cluster id>.mongodb.net/<database>"`
 
 Read [this tutorial](https://www.mongodb.com/docs/atlas/tutorial/connect-to-your-cluster/) for more information about connecting to MongoDB Atlas.
+
+### Create Atlas Search Index
+[Create a new search index](https://www.mongodb.com/docs/atlas/atlas-search/create-index/) on your database using the JSON editor and the [index definition](/definition.json) included in this project.
